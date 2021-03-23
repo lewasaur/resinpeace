@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Noto Sans', sans-serif;
+    background-image: url('./assets/resin-peace-bg.png');
+    background-position: center;
+}
+
+.main-header {
+    color:brown;
+    margin-top: 5vh;
+}
+
+
+.main-container {
+    background-color: rgba(192, 192, 192, 0.4);
+    margin-top: 10vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-size: 1.8rem;
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+}
+
+/* https://www.w3schools.com/howto/howto_css_login_form.asp */
+
+
+.input-fields {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+}
+
+.input-wrapper {
+    list-style-type: none;
+    border-radius: 3px;
+ }
+ 
+.form-row {
+    padding: .5em;
+}
+
+.form-row > label {
+    padding: .5em 1em .5em 0;
+}
+
+.form-row > input {
+    padding: .5em;
+}
+
+#max-resins-check {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0;
+    width: 10px;
+    height: 10px;
+}
+
+#max-resins-check-label {
+    margin-left: 0;
+    padding-left: 0;
+    font-size: 70%;
+    cursor: pointer;
+    /* not highlightable */
+    user-select: none;
+
+}
+
+.input-row input {
+    margin-left: 5em;
+    text-align: center;
+    width: 20%;
+    padding: 0.2em;
+}
+
+#submit-resins {
+    background: rgb(51, 153, 255);
+    color: white;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.5em;
+    width: 50%;
+}
+
+ /* https://www.quackit.com/css/flexbox/tutorial/align_form_elements_with_flexbox.cfm */
+ 
+ #submit-resins:hover {
+     opacity: 0.8;
+ }
+
+ /* RESULTS */
+ .results-field {
+     display: none;
+     flex-direction: column;
+     min-width: 100%;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .icon {
+     position: relative;
+     bottom: 5px;
+     left: 2px;
+     height: 30px;
+ }
+
+ .results {
+    font-style: italic;
+    color: aqua;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+ }
+
+ .results-wrapper li {
+    display: flex;
+    flex-direction: row;
+ }
+
+ #error-message {
+    display: none;
+    color: rgb(204, 0, 204);
+ }

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resin Peace | Resin Calculator</title>
+    <link rel="icon" href="./assets/resin-peace.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="app">
+        <header class="main-header">
+            <h1>Resin Peace</h1>
+        </header>
+        <div class="main-container">
+            <h2 id="clock"></h2>
+            <div class="input-fields">
+                <ul class="input-wrapper">
+                    <li class="input-row">
+                        <label for="current-resins">Current Resins: </label>
+                        <input type="text" name="current-resins" id="current-resins" maxlength="3" onkeypress="return isNumber(event)" value="0" onpaste="return false">
+                    </li>
+                    <li class="input-row">
+                        <label for="desired-resins">Desired Resins: </label>
+                        <input type="text" name="desired-resins" id="desired-resins" maxlength="3" onkeypress="return isNumber(event)" value="160" onpaste="return false">
+                        <input type="checkbox" name="max-resins-check" id="max-resins-check" checked>
+                        <label for="max-resins-check" id="max-resins-check-label">max</label>
+                    </li>
+                </ul>
+             
+                
+ 
+                <button id="submit-resins">Submit</button>
+            </div>
+            <h4 id="error-message">Invalid Input! <br>Resin Inputs must be between 0-160 <br> Current Resins can't be greater than Desired Resins</h4>
+            <div class="results-field">
+                <h3>Results</h3>
+                <ul class="results-wrapper">
+                    <li id="first-li">You need <p id="resins-result" class="results"></p> to reach <p id="desired-result-show" class="results"></p> <img src="assets/resin-peace.ico" class="icon"></img></li>
+                    <li id="second-li">Time Needed: <p id="minutes-needed" class="results"></p> Minutes</li>
+                    <li id="third-li">Time Calculated: <p id="calculated-time" class="results"></p></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
