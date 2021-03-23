@@ -138,3 +138,9 @@
     display: none;
     color: rgb(204, 0, 204);
  }
+
+ @media only screen and (max-width: 600px) {
+    .main-container {
+      width: 100%;
+    }
+  }
