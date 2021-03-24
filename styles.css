@@ -15,7 +15,7 @@
 }
 
 .main-header {
-    color:brown;
+    color:rgb(231, 27, 231);
     margin-top: 5vh;
 }
 
@@ -136,7 +136,7 @@
 
  #error-message {
     display: none;
-    color: rgb(204, 0, 204);
+    color: rgb(211, 79, 18);
  }
 
  @media only screen and (max-width: 600px) {

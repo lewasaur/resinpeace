@@ -147,7 +147,7 @@ let computeMinutes = (resinToMinutes) => {
 }
 
 let validateInput = (cResins, dResins) => {
-	if (cResins > dResins || cResins > 160 || dResins > 160 || cResins < 0 || dResins < 0){
+	if (cResins > dResins || cResins > 160 || dResins > 160 || cResins < 0 || dResins < 0 || isNaN(cResins) || isNaN(dResins)){
 		return false;
 	} else {
 		return true;
